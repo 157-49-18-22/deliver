@@ -1,0 +1,15 @@
+const components = [
+  "Navbar",
+  "Hero",
+  "Problem",
+  "Solution",
+  "MarketSize",
+  "MarketTailwinds",
+  "CompetitiveLandscape",
+  "Roadmap",
+  "BusinessModel",
+  "InvestmentAsk",
+  "WhyNow",
+  "CallToAction",
+  "Footer"
+];
