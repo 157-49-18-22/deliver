@@ -1,12 +1,49 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-project</title>
+    <title>DELIVER UNITE | THE OS FOR DELIVERY PARTNERS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#ff4500",
+                      "background": "#fcf9f8",
+                      "on-background": "#1c1b1b",
+                      "surface": "#fcf9f8",
+                      "on-surface": "#1c1b1b",
+                      "inverse-surface": "#1c1b1b",
+                      "primary-container": "#ff4500",
+                      "on-primary-container": "#ffffff",
+                      "surface-container": "#f0eded",
+                      "surface-variant": "#e5e2e1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "8px",
+                      "xl": "12px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "body-md": ["Hanken Grotesk", "sans-serif"],
+                      "display-lg": ["Anton", "sans-serif"],
+                      "headline-md": ["Anton", "sans-serif"],
+                      "headline-lg": ["Anton", "sans-serif"],
+                      "label-bold": ["Hanken Grotesk", "sans-serif"],
+                      "body-lg": ["Hanken Grotesk", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
   </head>
-  <body>
+  <body class="bg-black text-on-surface font-body-md overflow-x-hidden">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
