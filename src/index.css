@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -48,7 +47,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Make section backgrounds completely transparent so ONLY the video is the background */
 section.bg-surface,
 section.bg-surface-container,
 section.bg-on-surface, 
@@ -56,4 +54,13 @@ footer.bg-inverse-surface,
 section.bg-inverse-surface,
 section.bg-primary {
     background-color: transparent !important;
+}
+
+/* Mobile hero — blurred scooter visible behind headline */
+.hero-mobile-bg-sharp {
+    filter: none;
+}
+.hero-mobile-bg-blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
