@@ -4,7 +4,11 @@ import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Solution from './components/Solution';
 import MarketSize from './components/MarketSize';
+import SeedRound from './components/SeedRound';
 import Details from './components/Details';
+import GoToMarket from './components/GoToMarket';
+import BizModel from './components/BizModel';
+import Founders from './components/Founders';
 import Footer from './components/Footer';
 
 function App() {
@@ -46,7 +50,11 @@ function App() {
         <Problem />
         <Solution />
         <MarketSize />
+        <SeedRound />
         <Details />
+        <GoToMarket />
+        <BizModel />
+        <Founders />
         <Footer />
       </div>
     </div>
