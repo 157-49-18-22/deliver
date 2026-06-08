@@ -15,15 +15,15 @@ const Footer = () => {
           </p>
 
           {/* Contact Row */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 md:gap-16 reveal mt-12" style={{ transitionDelay: '0.3s' }}>
-            <a href="mailto:operations@maydiv.com" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 reveal mt-12" style={{ transitionDelay: '0.3s' }}>
+            <a href="mailto:info@delivrunite.com" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
               <span className="material-symbols-outlined text-primary text-3xl">mail</span>
-              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">operations@maydiv.com</span>
+              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">info@delivrunite.com</span>
             </a>
-            <a href="mailto:operation@maydiv.com" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
-              <span className="material-symbols-outlined text-primary text-3xl">language</span>
-              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">operation@maydiv.com</span>
-            </a>
+            <div className="flex items-center gap-3 text-white group">
+              <span className="material-symbols-outlined text-primary text-3xl">location_on</span>
+              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest text-center" style={{ maxWidth: '350px' }}>H.no 1243 sec 23A nit faridabad haryana 121005</span>
+            </div>
             <a href="tel:+919220438999" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
               <span className="material-symbols-outlined text-primary text-3xl">phone</span>
               <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">+91-9220438999</span>
