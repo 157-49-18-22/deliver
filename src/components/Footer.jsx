@@ -15,18 +15,18 @@ const Footer = () => {
           </p>
 
           {/* Contact Row */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 reveal mt-12" style={{ transitionDelay: '0.3s' }}>
-            <a href="mailto:info@delivrunite.com" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
-              <span className="material-symbols-outlined text-primary text-3xl">mail</span>
-              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">info@delivrunite.com</span>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 reveal mt-12 w-full" style={{ transitionDelay: '0.3s' }}>
+            <a href="mailto:info@delivrunite.com" className="flex items-center gap-4 text-white hover:text-primary hover:-translate-y-1 transition-all duration-300 group bg-white/5 backdrop-blur-sm px-6 py-4 border border-white/10 w-full md:w-auto justify-center rounded-sm hover:border-primary/50 shadow-lg">
+              <span className="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">mail</span>
+              <span className="font-label-bold text-sm md:text-base uppercase tracking-widest">info@delivrunite.com</span>
             </a>
-            <div className="flex items-center gap-3 text-white group">
-              <span className="material-symbols-outlined text-primary text-3xl">location_on</span>
-              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest text-center" style={{ maxWidth: '350px' }}>H.no 1243 sec 23A nit faridabad haryana 121005</span>
+            <div className="flex items-center gap-4 text-white group bg-white/5 backdrop-blur-sm px-6 py-4 border border-white/10 w-full md:w-auto justify-center rounded-sm hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 shadow-lg">
+              <span className="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">location_on</span>
+              <span className="font-label-bold text-sm md:text-base uppercase tracking-widest text-center" style={{ maxWidth: '350px' }}>H.no 1243 sec 23A nit faridabad haryana 121005</span>
             </div>
-            <a href="tel:+919220438999" className="flex items-center gap-3 text-white hover:text-primary transition-colors group">
-              <span className="material-symbols-outlined text-primary text-3xl">phone</span>
-              <span className="font-label-bold text-base md:text-lg uppercase tracking-widest">+91-9220438999</span>
+            <a href="tel:+919220438999" className="flex items-center gap-4 text-white hover:text-primary hover:-translate-y-1 transition-all duration-300 group bg-white/5 backdrop-blur-sm px-6 py-4 border border-white/10 w-full md:w-auto justify-center rounded-sm hover:border-primary/50 shadow-lg">
+              <span className="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">phone</span>
+              <span className="font-label-bold text-sm md:text-base uppercase tracking-widest">+91-9220438999</span>
             </a>
           </div>
         </div>
@@ -47,6 +47,7 @@ const Footer = () => {
             <a className="font-display-lg text-base md:text-xl uppercase hover:text-primary transition-all italic relative group" href="#go-to-market">Go-To-Market<span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-300"></span></a>
             <a className="font-display-lg text-base md:text-xl uppercase hover:text-primary transition-all italic relative group" href="#biz-model">Biz Model<span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-300"></span></a>
             <a className="font-display-lg text-base md:text-xl uppercase hover:text-primary transition-all italic relative group" href="#founders">Founders<span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-300"></span></a>
+            <a className="font-display-lg text-base md:text-xl uppercase transition-all italic relative group text-primary drop-shadow-[0_0_8px_rgba(255,102,0,0.8)]" href="#invest">Invest<span className="absolute -bottom-1 left-0 w-full h-[2px] bg-primary transition-all duration-300 shadow-[0_0_10px_#ff6600]"></span></a>
           </div>
         </div>
       </footer>

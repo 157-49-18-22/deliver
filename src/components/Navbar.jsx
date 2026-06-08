@@ -51,7 +51,10 @@ const Navbar = () => {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-    <nav className={`fixed top-0 z-50 w-full flex justify-between items-center px-4 md:px-16 transition-all duration-500 overflow-visible py-2 ${scrolled ? 'bg-white/95 backdrop-blur-md h-24 md:h-28 shadow-md border-b-2 border-surface-variant' : 'bg-transparent h-24 md:h-32'}`}>
+    <nav className={`fixed top-0 z-50 w-full flex justify-between items-center px-4 md:px-16 transition-all duration-500 overflow-visible py-2 ${scrolled ? 'h-24 md:h-28 shadow-md border-b-2 border-surface-variant' : 'h-24 md:h-32'}`}>
+      {/* Background layer for scroll effect, separated so it doesn't clip fixed child elements */}
+      <div className={`absolute inset-0 w-full h-full -z-10 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-md' : 'bg-transparent'}`}></div>
+      
       <div className="flex items-center relative z-[60] ml-2 lg:ml-6 mt-1 overflow-visible shrink-0">
         <img alt="Deliver Unite Logo" className="h-20 md:h-24 lg:h-28 w-auto object-contain transition-all duration-500 scale-125 origin-left" src="/logo.png" />
       </div>
