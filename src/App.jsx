@@ -9,6 +9,7 @@ import Details from './components/Details';
 import GoToMarket from './components/GoToMarket';
 import BizModel from './components/BizModel';
 import Founders from './components/Founders';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -33,11 +34,11 @@ function App() {
     <div className="bg-transparent text-on-surface font-body-md overflow-x-hidden relative min-h-screen">
       {/* Background Video for all sections */}
       <div className="fixed inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         >
           <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260423_161253_c72b1869-400f-45ed-ac0c-52f68c2ed5bd.mp4" type="video/mp4" />
@@ -50,11 +51,13 @@ function App() {
         <Problem />
         <Solution />
         <MarketSize />
+        <ContactForm />
         <SeedRound />
         <Details />
         <GoToMarket />
         <BizModel />
         <Founders />
+
         <Footer />
       </div>
     </div>

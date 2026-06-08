@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ['problem', 'solution', 'market', 'seed-round', 'go-to-market', 'biz-model', 'founders'];
+      const sections = ['problem', 'solution', 'market', 'seed-round', 'go-to-market', 'biz-model', 'founders', 'invest'];
       let currentSection = '';
 
       for (const section of sections) {
@@ -45,6 +45,7 @@ const Navbar = () => {
     { id: 'go-to-market', label: 'Go-To-Market' },
     { id: 'biz-model', label: 'Biz Model' },
     { id: 'founders', label: 'Founders' },
+    { id: 'invest', label: 'Invest' },
   ];
 
   const handleLinkClick = () => setIsOpen(false);
@@ -74,9 +75,9 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:block ml-4 relative z-[60] shrink-0">
-        <button type="button" className="bg-primary text-white font-headline-md uppercase px-8 py-3 border-2 border-primary hover:bg-white hover:text-primary transition-all">
-          GET STARTED
-        </button>
+        <a href="#invest" className="inline-block bg-primary text-white font-headline-md uppercase px-8 py-3 border-2 border-primary hover:bg-white hover:text-primary transition-all">
+          INVEST NOW
+        </a>
       </div>
 
       {/* Mobile hamburger */}
@@ -105,13 +106,13 @@ const Navbar = () => {
             {link.label}
           </a>
         ))}
-        <button
-          type="button"
+        <a
+          href="#invest"
           onClick={handleLinkClick}
           className="bg-primary text-white font-headline-md uppercase px-10 py-4 border-2 border-primary hover:bg-white hover:text-primary transition-all mt-8"
         >
-          GET STARTED
-        </button>
+          INVEST NOW
+        </a>
       </div>
     </nav>
   );
